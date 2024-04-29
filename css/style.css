@@ -1,0 +1,92 @@
+@import url(variables.css);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+.container{
+    width: 100%;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: 
+    "Section1 Section2 Section3";
+    background: purple;
+}
+.Section1{
+    grid-area: Section1;
+    background-color: red;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 5vh;
+    height: 100%;
+    
+}
+.Section1 ul{
+    list-style: none;
+}
+.Section1 div{
+    display: flex;
+    width: 100%;
+    height: 8vh;
+    background-color: green;
+    margin-bottom: 1vh;
+
+}
+.Section1 div i{
+    font-size: 2em;
+}
+.Section2{
+    grid-area: Section2;
+    background-color: blue;
+}
+.Section3{
+    grid-area: Section3;
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100%;
+    width: 100%;
+}
+.Section3_1{
+    width: 100%;
+    padding-bottom: 5vh;
+}
+.Section3_2{
+    width: 100%;
+}
+.Section3_1 div{
+    display: flex;
+    flex-direction: row;
+    height: 8vh;
+    justify-content: space-around;
+    background: green;
+    margin-bottom: 1vh;
+}
+.Section3_2 div{
+    display: flex;
+    flex-direction: row;
+    height: 8vh;
+    justify-content: space-around;
+    background: green;
+    margin-bottom: 1vh;
+}
+.Section3 ul{
+    list-style: none;
+}
