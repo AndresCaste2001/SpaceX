@@ -96,7 +96,7 @@ export const informationWebRocket = async(wikipedia)=>{
     
     let divLast = document.createElement('div');
     let h3 = document.createElement('h3');
-    h3.textContent = "Read more about the coete"
+    h3.textContent = "Read more about the rocket"
     let a = document.createElement('a');
     a.setAttribute("href", wikipedia)
     a.setAttribute("target", "_blank")
